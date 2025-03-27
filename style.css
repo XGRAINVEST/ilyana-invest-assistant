@@ -16,7 +16,7 @@ header {
   text-align: center;
 }
 .logo {
-  width: 80px;
+  width: 160px; /* x2 par rapport à avant */
   height: auto;
   margin-bottom: 20px;
 }
@@ -67,7 +67,7 @@ button.send {
   justify-content: center;
 }
 .tag {
-  background-color: #2f2f2f;
+  background-color: #0e2e2e;
   padding: 8px 16px;
   border-radius: 50px;
   font-size: 0.9em;
