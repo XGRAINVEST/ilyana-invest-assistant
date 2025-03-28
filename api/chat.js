@@ -25,8 +25,8 @@ export default async function handler(req, res) {
     const reply = data.choices?.[0]?.message?.content || "Désolé, une erreur est survenue.";
 
     res.status(200).json({ reply });
-  } catch (error) {
-    console.error("Erreur API OpenAI :", error);
-    res.status(500).json({ message: "Erreur interne du serveur" });
-  }
+  catch (error) {
+  console.error("Erreur API OpenAI :", error); // ← ligne ajoutée
+  res.status(500).json({ message: "Erreur interne du serveur" });
+}
 }
