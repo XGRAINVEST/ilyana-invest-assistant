@@ -5,14 +5,142 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Assistant IA Ilyana Invest</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0e2e2e;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+    header {
+      margin: 40px 20px 0;
+      text-align: center;
+    }
+    .logo {
+      width: 160px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2em;
+      margin: 10px 0;
+    }
+    p {
+      font-size: 1em;
+      color: #ccc;
+      margin: 5px 0;
+    }
+    .chat-container {
+      width: 90%;
+      max-width: 700px;
+      margin-top: 30px;
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 10px #222;
+    }
+    .input-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+    input[type="text"] {
+      flex: 1;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      background-color: #2b2b2b;
+      color: white;
+      font-size: 1em;
+      min-width: 200px;
+    }
+    button.send {
+      background-color: #e63978;
+      border: none;
+      color: white;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .tags {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .tag {
+      background-color: #008080;
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 0.9em;
+      cursor: pointer;
+      color: #fff;
+    }
+    .conversation-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+    .language-selector {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .language-selector button {
+      margin: 5px;
+      padding: 6px 12px;
+      background-color: #2f2f2f;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      margin: 50px 20px;
+      text-align: center;
+      color: #888;
+      font-size: 0.9em;
+    }
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 0.95em;
+      }
+      .input-area {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      input[type="text"] {
+        width: 100%;
+      }
+      button.send {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <img src="logo_ilyana.png" alt="Logo Ilyana Invest" class="logo" />
-    <h1>Le premier assistant IA immobilier au monde</h1>
-    <p>Une nouvelle façon d’investir.  
-Exclusif à Essaouira. Bientôt dans tout le Maroc.</p>
- <p><strong>Une IA stratégique. Un accès total au marché.</strong></p>
+    <h1>Le premier assistant IA immobilier au monde </h1>
+    <p>Une nouvelle façon d’investir. Exclusif à Essaouira. Bientôt dans tout le Maroc..</p>
+    <p><strong>Une IA stratégique. Un accès total au marché.</strong></p>
   </header>
   <div class="chat-container">
     <p>Posez vos questions. Ilyana vous répond, vous oriente, vous accompagne.</p>
@@ -25,9 +153,10 @@ Exclusif à Essaouira. Bientôt dans tout le Maroc.</p>
       <input type="checkbox" id="privacy" />
     </div>
     <div class="tags">
-      <div class="tag">Achat de terrain à Essaouira</div>
+      <div class="tag">Opportunités à Essaouira</div>
       <div class="tag">Fiscalité des non-résidents</div>
       <div class="tag">Projet locatif clé en main</div>
+      <div class="tag">Vendre un bien</div>
     </div>
     <div class="language-selector">
       <p>Langue :</p>
@@ -37,8 +166,8 @@ Exclusif à Essaouira. Bientôt dans tout le Maroc.</p>
       <button>Darija</button>
     </div>
   </div>
-  <footer style="margin-top: 50px; text-align: center; color: #888; font-size: 0.9em;">
-    <p>🤝 Un projet sérieux mérite un vrai conseil.<br />Prenez rendez-vous avec un expert Ilyana Invest et transformez votre idée en investissement solide.</p>
+  <footer>
+    <p>💡 Ilyana, c’est plus qu’un chatbot : c’est votre copilote immobilier.</p>
   </footer>
 </body>
 </html>
